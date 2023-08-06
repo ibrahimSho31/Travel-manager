@@ -1,0 +1,163 @@
+
+
+.cd-sec{
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.cd-sec1{
+    display: flex;
+    flex-direction: row;
+}
+
+.cd-sec1 section{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.cd-sec1div{
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.cd-profile{
+    margin-right: 30px;
+}
+
+.cd-profile img{
+    width: 100px;
+}
+
+.cd-profMail{
+    color: grey;
+    font-weight: 700;
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cd-profData div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cd-profData div p{
+    color: grey;
+    font-size: 15px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+/*  */
+
+.cd-sec2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.cd-sec2 section{
+    width: 47%;
+    flex-wrap: wrap;
+}
+
+.cd-sec2 section p{
+    color: grey;
+    font-size: 13px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.cd-sec2 section h4{
+    padding-bottom: 20px;
+}
+
+.cd-sec2 section h4 br{
+    display: none;
+}
+
+.cd-sec2 section p span{
+    color: red;
+    font-weight: 400;
+}
+
+.birth-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cd-btn-sec{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cd-btn-sec button{
+    width: 160px;
+    border: none;
+    background-color: rgb(220, 173, 8);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 900;
+    color: #FFFFFF;
+    height: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 549px) {
+    .cd-sec2 section h4 br{
+        display: block;
+    }
+}
+@media (max-width: 677px) {
+    .cd-profile img{
+        width: 70px;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+    .cd-profData div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .cd-profData div p{
+        font-size: 12px;
+    }
+    .cd-profMail{
+        font-size: 12px;
+    }
+    .cd-sec1div{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .cd-profile{
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 937px) {
+    .cd-sec2{
+        flex-direction: column;
+    }
+    .cd-sec2 section{
+        width: 100%;
+    }
+}

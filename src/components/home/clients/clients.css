@@ -1,0 +1,171 @@
+.workspace-body{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100%;
+}
+
+.space{
+    width: 85vw;
+}
+
+.client-sec{
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.client-sec1{
+    display: flex;
+    flex-direction: row;
+}
+
+.client-sec1 input{
+    width: 85%;
+    margin-right: 20px;
+    height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    font-size: 15px;
+    padding-left: 20px;
+    color: grey;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.client-sec1 input::placeholder{
+    color: grey;
+}
+
+.client-sec1 div{
+    display: flex;
+    width: 25%;
+}
+.client-sec1 button{
+    width: 100%;
+    border: none;
+    background-color: rgb(220, 173, 8);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+.clientstable{
+    width: 100%;
+    border-spacing: 0;
+    margin-top: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    border-collapse: collapse;
+}
+
+.clientstable thead{
+    background-color: rgb(251, 241, 221);
+}
+
+.clientstable thead tr th{
+    padding: 4px;
+    text-align: left;
+    border-bottom: 1px solid orange;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.clientstable tbody tr{
+    cursor: pointer;
+}
+
+.clientstable tbody tr:hover{
+    background-color: rgb(251, 241, 221);
+    box-decoration-break: clone;
+}
+
+.clientstable tbody td{
+    padding: 20px 4px 20px 4px;
+    text-align: left;
+    font-weight: 300;
+}
+
+.lasttd{
+    width: 300px;
+}
+
+@media (max-width: 709px) {
+    .client-sec1 button{
+        font-size: 10px;
+    }
+}
+@media (max-width: 780px) {
+    .clientstable tbody td br{
+        display: flex;
+    }
+}
+
+@media (max-width: 637px) {
+    .clientstable tbody td{
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 707px) {
+    .client-sec1{
+        flex-direction: column;
+        
+    }
+    .client-sec1 input{
+        width: 100%;
+    }
+
+    .client-sec1 button{
+        width: 100%;
+        height: 40px;
+    }
+
+    .client-sec1 div{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 20px;
+        width: 50%;
+    }
+}
+@media (max-width: 480px) {
+    .client-sec1 button{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    .clientstable thead,
+    .clientstable tbody,
+    .clientstable tfoot,
+    .clientstable th,
+    .clientstable td,
+    .clientstable tr {
+      display: block;
+      width: 100%;
+    }
+  
+    .clientstable tbody tr:nth-child(even) {
+      background-color: #f2f2f2; 
+    }
+  
+    .clientstable tbody tr:nth-child(even):hover{
+        background-color: rgb(251, 241, 221);
+    }
+    .clientstable th,
+    .clientstable td {
+      text-align: left;
+      padding: 0.625rem;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    .clientstable th:first-child,
+    .clientstable td:first-child {
+      border-left: none;
+    }
+  }
+  
